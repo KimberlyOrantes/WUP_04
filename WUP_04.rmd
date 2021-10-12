@@ -48,10 +48,12 @@ We saw wordsum which is a numeric variable and degree is a factor variable, ther
 boxplot(WORDSUM~DEGREE,data=ourdata)
 ```
 ```{r}
-basicCN <- ggplot(davisdata,aes(x=Seat,y=alcohol))
+basicCN <- ggplot(ourdata,aes(x=DEGREE,y=WORDSUM))
 
 basicCN + geom_boxplot()
 ```
+
+The graduate box is higher than the high school box. The high school box appears to show a difference in the wordsum test.  
 
 ### Numerical Descriptive Results
 
