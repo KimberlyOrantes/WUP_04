@@ -53,11 +53,17 @@ basicCN <- ggplot(ourdata,aes(x=DEGREE,y=WORDSUM))
 basicCN + geom_boxplot()
 ```
 
-The graduate box is higher than the high school box. The high school box appears to show a difference in the wordsum test.  
+The graduate box is higher than the high school box. The Lt high school box appears to show a difference in the wordsum test.  
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(WORDSUM~DEGREE,data=ourdata)
+```
+
+Lt high school mean is 7.75 compared to the mean for graduate school which is 10.09. This means there is a difference between the two.  
 
 ## Inferential Results
 
